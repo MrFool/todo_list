@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+    <h1>待办事项:</h1>
+    <h4><a href = "/admin/blog/article/">add/delete</a></h4>
+    {% for article in wenzhangs %}
+        <h2>{{ article.create_time }}</h2>
+        <h3>{{ article.content }}</h3>
+    {% endfor %}
+</body>
+</html>
